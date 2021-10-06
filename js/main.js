@@ -16,7 +16,9 @@ function searchButton(){
             console.log(data.explanation)
             document.querySelector('h2').innerText = data.title 
             document.querySelector('h3').innerText = data.explanation
-            document.querySelector('img').src = data.url
+            document.querySelector('#imgOfDay').src = data.url
+            console.log(data.url)
+
         })
         .catch(err => {
             console.log(`error ${err}`)
